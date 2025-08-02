@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny Lenses – Premium Eyewear</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .icon-hover:hover {
+      transform: scale(1.15);
+      transition: transform 0.3s ease-in-out;
+    }
+    .button-hover:hover {
+      transform: scale(1.05);
+      background-color: #1f2937;
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-yellow-400 shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="assets/images/logo.jpg" alt="Sunny Lenses Logo" class="w-10 h-10">
+        <h1 class="text-2xl font-bold text-gray-900">Sunny Lenses</h1>
+      </div>
+      <nav class="space-x-4 font-medium">
+        <a href="#how" class="hover:underline">How it Works</a>
+        <a href="#style" class="hover:underline">Style</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-yellow-100 py-16" id="hero">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center px-6 gap-10">
+      <div class="md:w-1/2" data-aos="fade-right">
+        <h2 class="text-4xl font-bold mb-4">Glasses that look good on you, not just on the shelf</h2>
+        <p class="text-lg mb-6">Custom-tailored eyewear that complements your unique style and personality.</p>
+        <a href="#how" class="bg-gray-900 text-white px-6 py-3 rounded-full button-hover">Shop Now</a>
+      </div>
+      <div class="md:w-1/2" data-aos="fade-left">
+        <img src="assets/images/sunglasses.jpg" alt="Eyewear" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works Section -->
+  <section class="py-20 bg-white" id="how">
+    <div class="max-w-6xl mx-auto text-center px-4">
+      <h3 class="text-3xl font-bold mb-10" data-aos="fade-up">This is the future of premium eyewear</h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div data-aos="fade-up" class="p-4 hover:shadow-lg transition duration-300 rounded-lg">
+          <img src="assets/images/Eyewhereshape.jpg" class="mx-auto mb-3 icon-hover" />
+          <h4 class="font-bold mb-2">Measured for You</h4>
+          <p>Precision-fit lenses designed for your face shape.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100" class="p-4 hover:shadow-lg transition duration-300 rounded-lg">
+          <img src="assets/images/Choosestyles.jpg" class="mx-auto mb-3 icon-hover" />
+          <h4 class="font-bold mb-2">Designed by You</h4>
+          <p>Choose styles, frames, and colors that reflect you.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" class="p-4 hover:shadow-lg transition duration-300 rounded-lg">
+          <img src="assets/images/PerfectGuaranteed.jpg" class="mx-auto mb-3 icon-hover" />
+          <h4 class="font-bold mb-2">Perfect, Guaranteed</h4>
+          <p>Love it or return it with our 30-day money-back promise.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="p-4 hover:shadow-lg transition duration-300 rounded-lg">
+          <img src="assets/images/MadefromScratch.jpg" class="mx-auto mb-3 icon-hover" />
+          <h4 class="font-bold mb-2">Made from Scratch</h4>
+          <p>Premium materials handcrafted into perfection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Individual Style Section -->
+  <section class="py-20 bg-gray-50" id="style">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Individual Style</h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/images/01.jpg" class="rounded-full mx-auto shadow-md transform hover:scale-110 transition duration-300" />
+        <img src="assets/images/02.jpg" class="rounded-full mx-auto shadow-md transform hover:scale-110 transition duration-300" />
+        <img src="assets/images/03.jpg" class="rounded-full mx-auto shadow-md transform hover:scale-110 transition duration-300" />
+        <img src="assets/images/04.jpg" class="rounded-full mx-auto shadow-md transform hover:scale-110 transition duration-300" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Contact -->
+  <footer class="bg-gray-800 text-white py-8 text-center" id="contact">
+    <h4 class="text-xl font-semibold mb-2">Get in Touch</h4>
+    <p>Contact us at <a href="mailto:hello@sunnylenses.com" class="underline">hello@sunnylenses.com</a></p>
+    <p class="mt-2">&copy; 2025 Sunny Lenses. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Init -->
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
+</html>
